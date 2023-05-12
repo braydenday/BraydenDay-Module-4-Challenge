@@ -1,0 +1,184 @@
+:root {
+    --lightgreen: #00ff55;
+    --darkgreen: #00b600;
+    --white: #fff;
+    --offwhite: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: grey;
+}
+
+.hide {
+    display: none;
+}
+
+.start {
+    display: block;
+}
+
+.title {
+    color: var(--offwhite);
+    border-bottom: 1px solid black;
+}
+
+.info-box {
+    width: 540px;
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.info-box .info-title {
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.info-box .info-list {
+    padding: 15px 35px;
+}
+
+.info-box .info-list .info {
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+.info-box .info-list .info span {
+    font-weight: 600;
+    color: var(--lightgreen);
+}
+
+.quiz-box {
+    width: 540px;
+    background: var(--white);
+    border-radius: 5px;
+}
+
+.que-text {
+    border-top: 1px solid black;
+}
+
+#timeRem {
+    margin-top: 5;
+}
+
+#start-btn {
+    width: 50%;
+    background-color: var(--lightgreen);
+    border-color: var(--white);
+    color: var(--offwhite);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    border-radius: 10px;
+}
+
+#start-btn:hover {
+    background: var(--darkgreen);
+    color: var(--offwhite);
+}
+
+.info-box .buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: o 35px;
+    border-top: 1px solid black;
+}
+
+.info-box .buttons button {
+    margin: 0 5px;
+    height: 40px;
+    width: 100px;
+    border: 1px solid var(--lightgreen);
+    background: var(--lightgreen);
+    border-radius: 7px;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons button.quit {
+    border-color: var(--lightgreen);
+    background-color: var(--white);
+    color: var(--lightgreen);
+}
+
+.buttons button.restart {
+    color: var(--white);
+    background: var(--lightgreen);
+}
+
+.buttons button.quit:hover {
+    background: var(--lightgreen);
+    color: var(--white);
+}
+
+.buttons button.restart:hover {
+    background: var(--darkgreen);
+    color: var(--offwhite);
+}
+
+.question {
+    border-bottom: 1px solid black;
+}
+
+.option {
+    border: solid var(--darkgreen);
+    margin: 5px;
+    background: var(--lightgreen);
+    color: var(--offwhite);
+    border-radius: 5px;
+}
+
+.option:hover {
+    background: var(--darkgreen);
+    cursor: pointer;
+}
+
+#name,
+#saveScore {
+    width: 100px;
+}
+
+#response {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: o 35px;
+    border-top: 1px solid var(--white);
+}
+
+#saveScore {
+    border-color: var(--lightgreen);
+    background-color: var(--white);
+    color: var(--lightgreen);
+    width: 50%
+}
+
+#saveScore:hover {
+    background: var(--lightgreen);
+    color: var(--white);
+}
+
+.buttons {
+    justify-content: center;
+}
+
+.buttons a {
+    color: green;
+    text-decoration: none;
+    /* no underline */
+}
